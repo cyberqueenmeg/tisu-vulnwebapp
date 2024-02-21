@@ -373,11 +373,13 @@ function dvwaHtmlEcho( $pPage ) {
 	<body class=\"home\">
 		<div id=\"container\">
 
-			<div id=\"header\">
+			<div id=\"header\" class=\"parallax\">
 
-				<img src=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/images/logo.png\" alt=\"Damn Vulnerable Web Application\" />
+				<img src=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/images/logo.png\" style=\"width: 30em; margin:30px\" alt=\"Damn Vulnerable Web Application\" />
 
 			</div>
+
+			<div id=\"mission\"> <p>\"Empowering Member Organizations to Empower Themselves\"</p> </div>
 
 			<div id=\"main_menu\">
 

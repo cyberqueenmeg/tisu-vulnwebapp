@@ -74,19 +74,17 @@ echo "<!DOCTYPE html>
 
 	<body>
 
+	<div class=\"background-container\">
+
 	<div id=\"wrapper\">
 
 	<div id=\"header\">
 
-	<br />
-
-	<p><img src=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/images/login_logo.png\" /></p>
-
-	<br />
-
 	</div> <!--<div id=\"header\">-->
 
 	<div id=\"content\">
+
+	<p><img id=\"logo\" src=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/images/login_logo.png\"/></p>
 
 	<form action=\"login.php\" method=\"post\">
 
@@ -130,6 +128,8 @@ echo "<!DOCTYPE html>
 
 	</div> <!--<div id=\"wrapper\"> -->
 
+	</div> 
+	
 	</body>
 
 </html>";

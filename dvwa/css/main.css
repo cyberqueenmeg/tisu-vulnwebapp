@@ -1,3 +1,12 @@
+@font-face {
+	font-family: 'Custom-Font';
+	src: url('mywebfont.eot'); /* IE9 Compat Modes */
+	src: url('mywebfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('mywebfont.woff') format('woff'), /* Modern Browsers */
+	url('mywebfont.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('mywebfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 body {
 	margin: 0;
 	color: #2f2f2f;
@@ -16,7 +25,7 @@ div.clear {
 }
 
 a {
-	color: #99cc33;
+	color: #23319c;
 	text-decoration: underline;
 	font-weight: bold;
 }
@@ -25,7 +34,7 @@ a img {
 	border: 0;
 }
 
-a: hover {
+a:hover {
 	text-decoration: none;
 }
 
@@ -118,9 +127,25 @@ div#container {
 div#header {
 	padding: 10px;
 	overflow: hidden;
-	background: #2f2f2f;
-	border-bottom: 5px solid #A1CC33;
 	text-align: center;
+}
+
+div#mission {
+	padding: 30px;
+	overflow: hidden;
+	text-align: center;
+	background: linear-gradient(#192D50, #1f1f21);
+}
+
+div#mission p {
+	margin: 0;
+	font-size: 25px; 
+	color: white;
+	border-bottom: 5px solid rgb(209, 29, 29);
+	padding-bottom: 15px;
+	font-style: italic; 
+	display: inline-block; 
+	font-family: 'Helvetica Neue', sans-serif;
 }
 
 div#system_info {
@@ -140,6 +165,12 @@ div#main_body {
 div.body_padded {
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+/*new fix*/
+div.body_padded img {
+	max-width: 100%;
+	height: auto;
 }
 
 div#main_menu {
@@ -168,18 +199,18 @@ div#main_menu li a {
 
 div#main_menu li.selected {
 	border-color: #758DAE #758DAE #758DAE #758DAE;
-	background-color: #99cc33;
+	background-color: #192D50; 
 }
 
 div#main_menu li.selected a {
 	color: #F9F7ED;
 }
 
-div#main_menu li: hover {
+div#main_menu li:hover {
 	border-color: #D2D4D4;
 }
 
-div#main_menu li: hover a {
+div#main_menu li:hover a {
 	color: #F9F7ED;
 }
 
@@ -192,7 +223,7 @@ div#footer {
 	background: #2f2f2f;
 	padding: 10px;
 	text-align: center;
-	border-top: 5px solid #A1CC33;
+	border-top: 5px solid #192D50; 
 }
 
 input.popup_button {
@@ -263,4 +294,20 @@ span.success {
 span.failure {
 	color:red;
 	font-weight: bold;
+}
+
+/* Custom Styles & Animations */
+.parallax {
+	background-image: url("../images/parallax-bg.jpg");
+	background-attachment: fixed;
+	background-position: center bottom; /* Reversed direction */
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Turn off parallax for mobile devices to prevent conflicts. */
+@media (max-width: 768px) {
+	.parallax {
+		background-attachment: scroll;
+	}
 }

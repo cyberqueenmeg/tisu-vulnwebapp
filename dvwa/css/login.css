@@ -1,8 +1,17 @@
 body {
-	background: #fefffe;
+	background: #ffffff;
 	font: 12px/15px Arial, Helvetica, sans-serif;
 	line-height: 20px;
 	color: #6b6b6b;
+}
+
+#logo {
+	width: 30em;
+	transition: transform 0.3s ease-in-out;
+}
+
+#logo:hover {
+	transform: scale(1.1);
 }
 
 #wrapper {
@@ -11,8 +20,9 @@ body {
 }
 
 #content {
+	margin: 20px; 
 	display: inline-block;
-	padding: 20px;
+	padding: 40px;
 	width: auto;
 }
 
@@ -44,6 +54,34 @@ label {
 	border-color: #c4c4c4;
 	padding: 6px;
 	margin-bottom: 12px;
+}
+
+.submit input {
+	background: linear-gradient(#192D50, #1f1f21);
+	color: white;
+	font-weight: bold;
+	padding: 10px 50px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.submit input:hover {
+	animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 
 fieldset {
