@@ -1,37 +1,45 @@
 body {
-	background: #ffffff;
-	font: 12px/15px Arial, Helvetica, sans-serif;
+	background-image: url("../images/parallax-bg.jpg");
+    font: 12px/15px Arial, Helvetica, sans-serif;
+    color: #6b6b6b;
+	margin: 0; 
 	line-height: 20px;
-	color: #6b6b6b;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #logo {
-	width: 30em;
-	transition: transform 0.3s ease-in-out;
+	margin: 60px 0px 0px 0px; 
+    width: 30em;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* moved from the second #logo block */
 }
 
 #logo:hover {
-	transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 
 #wrapper {
 	text-align: center;
-	margin: 0 auto;
 }
 
 #content {
-	margin: 20px; 
 	display: inline-block;
-	padding: 40px;
 	width: auto;
+	height: auto;
 }
 
 #footer {
-	position: absolute;
+    background: #2f2f2f;
+    color: #999999;
+    position: absolute;
+	height: auto;
+	bottom: 0; 
 	width: 100%;
-	height: 50px;
-	bottom: 0px;
-	left: 0px;
+    margin: 0; 
+    padding: 10px 0 10px 0;
+    text-align: center;
 }
 
 label {
@@ -42,6 +50,9 @@ label {
 	overflow: hidden;
 	padding-right: 50px;
 	font-weight: bold;
+	color: white; 
+	font-size: 14px; 
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.9); /* Added shadow */
 }
 
 .loginInput {
@@ -70,6 +81,16 @@ label {
 	animation: pulse 1s infinite;
 }
 
+#messages {
+	color: #ffffff;
+	font-weight: bold;
+	background: rgba(250, 0, 0, 0.5);
+	border-radius: 5px;
+	width: 200px; 
+	margin: 0 auto;
+	font-size: 13px; 
+}
+
 @keyframes pulse {
 	0% {
 		transform: scale(1);
@@ -92,6 +113,6 @@ fieldset {
 }
 
 p {
-	font-size: 10px;
+	font-size: 13px;
 }
 

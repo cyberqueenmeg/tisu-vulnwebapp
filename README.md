@@ -1,71 +1,42 @@
-# DAMN VULNERABLE WEB APPLICATION
+## TISU's GOSH DARNED VULNERABLE WEB APPLICATION 
+Welcome to the instructions for TISU's Gosh Darned Vulnerable Web Application (TGDVWA). This guide will walk you through the process of setting up and using DVWA, a PHP/MySQL web application intentionally designed to be vulnerable. Whether you're a security professional, a web developer, a student, or a teacher, DVWA offers a legal and controlled environment to explore and learn about web application security.
 
-Damn Vulnerable Web Application (DVWA) is a PHP/MySQL web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students & teachers to learn about web application security in a controlled class room environment.
-
-The aim of DVWA is to **practice some of the most common web vulnerabilities**, with **various levels of difficulty**, with a simple straightforward interface.
+The aim of TISU'S TGDVWA is to **practice some of the most common web vulnerabilities**, with **various levels of difficulty**, with a simple straightforward interface.
 Please note, there are **both documented and undocumented vulnerabilities** with this software. This is intentional. You are encouraged to try and discover as many issues as possible.
 - - -
 
-## WARNING!
+## CAUTION
 
-Damn Vulnerable Web Application is damn vulnerable! **Do not upload it to your hosting provider's public html folder or any Internet facing servers**, as they will be compromised. It is recommended using a virtual machine (such as [VirtualBox](https://www.virtualbox.org/) or [VMware](https://www.vmware.com/)), which is set to NAT networking mode. Inside a guest machine, you can download and install [XAMPP](https://www.apachefriends.org/) for the web server and database.
+As emphasized in our home page, this web application is intended to be vulnerable. Before proceeding,
+take the neccessary precautions. **Do not upload it to your hosting provider's public html folder or any Internet facing servers**, as they will be compromised. It is recommended using a virtual machine (such as [VirtualBox](https://www.virtualbox.org/) or [VMware](https://www.vmware.com/)), which is set to NAT networking mode. Inside a guest machine, you can download and install [XAMPP](https://www.apachefriends.org/) for the web server and database.
 
 ### Disclaimer
 
-We do not take responsibility for the way in which any one uses this application (DVWA). We have made the purposes of the application clear and it should not be used maliciously. We have given warnings and taken measures to prevent users from installing DVWA on to live web servers. If your web server is compromised via an installation of DVWA, it is not our responsibility, it is the responsibility of the person/s who uploaded and installed it.
-
+TISU does not take responsibility for the way in which any one uses this application (TGDVWA). We have made the purposes of the application clear and it should not be used maliciously. We have given warnings and taken measures to prevent users from installing TGDVWA on to live web servers. If your web server is compromised via an installation of TGDVWA, it is not our responsibility, it is the responsibility of the person/s who uploaded and installed it. Adhere to the instructions provided to you during labs for optimal user experience.
 - - -
 
-## License
+## License Information 
 
-This file is part of Damn Vulnerable Web Application (DVWA).
-
-Damn Vulnerable Web Application (DVWA) is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-Damn Vulnerable Web Application (DVWA) is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with Damn Vulnerable Web Application (DVWA).  If not, see <https://www.gnu.org/licenses/>.
-
-- - -
-
-## Internationalisation
-
-This file is available in multiple languages:
-- Arabic: [العربية](README.ar.md)
-- Chinese: [简体中文](README.zh.md)
-- French: [Français](README.fr.md)
-- Persian: [فارسی](README.fa.md)
-- Portuguese: [Português](README.pt.md)
-- Spanish: [Español](README.es.md)
-- Turkish: [Türkçe](README.tr.md)
-- Indonesia: [Indonesia](README.id.md)
-
-If you would like to contribute a translation, please submit a PR. Note though, this does not mean just run it through Google Translate and send that in, those will be rejected. Submit your translated version by adding a new 'README.xx.md' file where xx is the two-letter code of your desired language (based on [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)).
-
+This application has been modified under the terms of the GNU General Public License. 
+Damn Vulnerable Web Application (DVWA), from which Tisu's Gosh Darned Vulnerable Web Application(TGDVWA) has been forked, is free software. Damn Vulnerable Web Application (DVWA) is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License <https://www.gnu.org/licenses/> for more details.
 - - -
 
 ## Download
 
-While there are various versions of DVWA around, the only supported version is the latest source from the official GitHub repository. You can either clone it from the repo:
-
+To obtain Tisu's Gosh Darned Vulnerable Web Application(TGDVWA), you can use the Git version control system by executing the following command in your terminal or command prompt:
 ```
-git clone https://github.com/digininja/DVWA.git
+git clone https://github.com/cyberqueenmeg/tisu-vulnwebapp.git
 ```
+This command instructs Git to clone (i.e., download and create a local copy of) the TISU DVWA repository hosted on GitHub using the specified URL. After running this command, you will have the entire TGDVWA codebase stored locally on your machine, allowing you to explore, modify, and run the application as needed.
 
-Or [download a ZIP of the files](https://github.com/digininja/DVWA/archive/master.zip).
-
+Alternatively, you may [download a ZIP of the files](https://github.com/cyberqueenmeg/tisu-vulnwebapp/archive/master.zip).
 - - -
 
 ## Installation
 
-### Automated Installation 🛠️
+### Automated Installation - Optional 🛠️
+
+Below are instructions for automated installation. These steps will assist you in installing the original DVWA application. However, please note that they will not facilitate the download of the TISU version of the application, Tisu's Gosh Darned Vulnerable Web Application (TGDVWA). For educational purposes, additional instructions have been provided. During TISU labs, it is recommended to follow the download instructions provided above instead of opting for automated installation. 
 
 **Note, this is not an official DVWA script, it was written by [IamCarron](https://github.com/iamCarron/). A lot of work went into creating the script and, when it was created, it did not do anything malicious, however it is recommended you review the script before blindly running it on your system, just in case. Please report any bugs to [IamCarron](https://github.com/iamCarron/), not here.**
 
@@ -182,7 +153,8 @@ If you are using a Debian based Linux distribution, you will need to install the
 - php php-mysqli
 - php-gd
 
-I would recommend doing an update before this, just so you make sure you are going to get the latest version of everything.
+It is recommended you update Linux before proceeding to ensure you have the latest versions of these
+packages. 
 
 ```
 apt update
@@ -195,7 +167,7 @@ The site will work with MySQL instead of MariaDB but we strongly recommend Maria
 
 ### Config File
 
-DVWA ships with a dummy copy of its config file which you will need to copy into place and then make the appropriate changes. On Linux, assuming you are in the DVWA directory, this can be done as follows:
+The TISU version of the DVWA ships with a dummy copy of its config file which you will need to copy into place and then make the appropriate changes. On Linux, assuming you are in the DVWA directory, this can be done as follows:
 
 `cp config/config.inc.php.dist config/config.inc.php`
 
@@ -286,11 +258,9 @@ These then go in the following sections of `./config/config.inc.php`:
 
 **Default password = `password`**
 
-_...can easily be brute forced ;)_
-
 Login URL: http://127.0.0.1/login.php
 
-_Note: This will be different if you installed DVWA into a different directory._
+_Note: This will be different if you installed the TISU DVWA into a different directory._
 
 - - -
 
@@ -431,19 +401,22 @@ As you can connect on the command line, it is likely something wrong in the conf
 If you see the following, the username or password you are using is wrong. Repeat the [Database Setup](#database-setup) steps and make sure you use the same username and password throughout the process.
 
 ```
-ERROR 1045 (28000): Access denied for user 'dvwa'@'localhost' (using password: YES)
+ERROR 1045 (28000): 
+Access denied for user 'dvwa'@'localhost' (using password: YES)
 ```
 
 If you get the following, the user credentials are correct but the user does not have access to the database. Again, repeat the setup steps and check the database name you are using.
 
 ```
-ERROR 1044 (42000): Access denied for user 'dvwa'@'localhost' to database 'dvwa'
+ERROR 1044 (42000): 
+Access denied for user 'dvwa'@'localhost' to database 'dvwa'
 ```
 
 The final error you could get is this:
 
 ```
-ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
+ERROR 2002 (HY000): 
+Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
 ```
 
 This is not an authentication issue but tells you that the database server is not running. Start it with the following
@@ -553,7 +526,9 @@ If raising a ticket, please submit at least the following information:
 
 ## Tutorials
 
-I am going to try to put together some tutorial videos that walk through some of the vulnerabilities and show how to detect them and then how to exploit them. Here are the ones I've made so far:
+For educational purposes, consider viewing the tutorial video below, which will walk you through vulnerabilities, how to detect them, and then how to exploit them. The following video
+demonstrates Cross-Site Scripting in a DVWA. The following example is demonstrated in browser.
+There are no external tools required to follow along to with this tutorial. 
 
 [Finding and Exploiting Reflected XSS](https://youtu.be/V4MATqtdxss)
 
@@ -579,34 +554,6 @@ By default it uses the file `database/sqli.db`, if you mess it up, simply copy `
 The challenges are exactly the same as for MySQL, they just run against SQLite3 instead.
 
 - - -
-
-👨‍💻 Contributors
------
-
-Thanks for all your contributions and keeping this project updated. :heart:
-
-If you have an idea, some kind of improvement or just simply want to collaborate, you are welcome to contribute and participate in the Project, feel free to send your PR.
-
-<p align="center">
-<a href="https://github.com/digininja/DVWA/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=digininja/DVWA&max=500">
-</a>
-</p>
-
-- - -
-
-## Reporting Vulnerabilities
-
-To put it simply, please don't!
-
-Once a year or so, someone will submit a report for a vulnerability they've found in the app, some are well written, sometimes better than I've seen in paid pen test reports, some are just "you are missing headers, pay me".
-
-In 2023, this elevated to a whole new level when someone decided to request a CVE for one of the vulnerabities, they were given [CVE-2023-39848](https://nvd.nist.gov/vuln/detail/CVE-2023-39848). Much hilarity ensued and time was wasted getting this corrected.
-
-The app has vulnerabilities, it is deliberate. Most are the well documented ones that you work through as lessons, others are "hidden" ones, ones to find on your own. If you really want to show off your skills at finding the hidden extras, write a blog post or create a video as there are probably people out there who would be interested in learning about them and about how your found them. If you send us the link, we may even include it in the references.
-
 ## Links
 
-Project Home: <https://github.com/digininja/DVWA>
-
-*Created by the DVWA team*
+Project Home: <https://github.com/cyberqueenmeg/tisu-vulnwebapp>

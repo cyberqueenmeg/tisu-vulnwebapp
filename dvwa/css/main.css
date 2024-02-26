@@ -208,6 +208,8 @@ div#main_menu li.selected a {
 
 div#main_menu li:hover {
 	border-color: #D2D4D4;
+	background-color: #3a5a91;  
+	transition: ease-in 0.2s;
 }
 
 div#main_menu li:hover a {
