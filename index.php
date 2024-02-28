@@ -29,7 +29,7 @@ $page[ 'body' ] .= "
 	<p>Tisu's Gosh Darned Vulnerable Web Application is gosh darn vulnerable! <em>Do not upload it to your hosting provider's public html folder or any Internet facing servers</em>, as they will be compromised. It is recommend using a virtual machine (such as " . dvwaExternalLinkUrlGet( 'https://www.virtualbox.org/','VirtualBox' ) . " or " . dvwaExternalLinkUrlGet( 'https://www.vmware.com/','VMware' ) . "), which is set to NAT networking mode. Inside a guest machine, you can download and install " . dvwaExternalLinkUrlGet( 'https://www.apachefriends.org/','XAMPP' ) . " for the web server and database.</p>
 	<br />
 	<h3>Disclaimer</h3>
-	<p>We do not take responsibility for the way in which any one uses this application (TGDVWA). We have made the purposes of the application clear and it should not be used maliciously. We have given warnings and taken measures to prevent users from installing DVWA on to live web servers. If your web server is compromised via an installation of DVWA it is not our responsibility it is the responsibility of the person/s who uploaded and installed it.</p>
+	<p>We cannot assume responsibility for the manner in which individuals utilize this application (TGDVWA). We have diligently outlined the intended purposes of the application and strongly discourage any malicious use. Precautionary measures and warnings have been provided to deter users from deploying TGDVWA on live web servers. Should your web server become compromised due to an installation of TGDVWA, accountability lies with the individual(s) who uploaded and installed it.</p>
 	<hr />
 	<br />
 
